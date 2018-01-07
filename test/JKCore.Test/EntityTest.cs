@@ -51,8 +51,6 @@
 
             // Assertion
             entity.Id.Should().BeNullOrEmpty();
-            entity.CreatedDate.Should().Be(default(DateTimeOffset));
-            entity.UpdatedDate.Should().Be(default(DateTimeOffset));
         }
 
         [Fact]
@@ -66,8 +64,6 @@
 
             // Assertion
             entity.Id.Should().Be(default(string));
-            entity.CreatedDate.Should().Be(default(DateTimeOffset));
-            entity.UpdatedDate.Should().Be(default(DateTimeOffset));
         }
     }
 }
